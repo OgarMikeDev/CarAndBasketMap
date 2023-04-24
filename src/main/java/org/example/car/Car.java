@@ -1,4 +1,4 @@
-package org.example;
+package org.example.car;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

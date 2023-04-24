@@ -1,7 +1,6 @@
-package org.example;
+package org.example.car;
 
 import java.util.HashMap;
-import java.util.StringJoiner;
 
 public class Main {
     public static void main(String[] args) {
