@@ -7,7 +7,8 @@ import lombok.Setter;
 
 import java.util.Objects;
 
-@Data
+@Setter
+@Getter
 @AllArgsConstructor
 public class Product {
     private String name;
@@ -25,5 +26,14 @@ public class Product {
     @Override
     public int hashCode() {
         return Objects.hash(name, price);
+    }
+
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "name='" + name + '\'' +
+                ", price=" + price +
+                '}';
     }
 }
