@@ -1,7 +1,6 @@
-package org.example.product.product;
+package org.example.product;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 

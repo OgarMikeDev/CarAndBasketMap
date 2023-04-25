@@ -1,4 +1,4 @@
-package org.example.product.product;
+package org.example.product;
 
 import java.util.Comparator;
 

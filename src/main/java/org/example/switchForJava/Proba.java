@@ -1,7 +1,5 @@
 package org.example.switchForJava;
 
-import org.example.product.product.Product;
-
 public class Proba {
     public static void main(String[] args) {
         String productOne = "milk";

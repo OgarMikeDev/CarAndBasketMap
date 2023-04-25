@@ -1,6 +1,5 @@
-package org.example.product.product;
+package org.example.product;
 
-import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
 

@@ -1,4 +1,4 @@
-package org.example.product.product;
+package org.example.product;
 
 public class Main {
     public static void main(String[] args) {
