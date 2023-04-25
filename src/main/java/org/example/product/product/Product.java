@@ -15,6 +15,11 @@ public class Product {
 
     private int price;
 
+
+    public Product(String name) {
+        this.name = name;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -29,11 +34,16 @@ public class Product {
     }
 
 
+//    @Override
+//    public String toString() {
+//        return "Product{" +
+//                "name='" + name + '\'' +
+//                ", price=" + price +
+//                '}';
+//    }
+
     @Override
     public String toString() {
-        return "Product{" +
-                "name='" + name + '\'' +
-                ", price=" + price +
-                '}';
+        return name;
     }
 }
