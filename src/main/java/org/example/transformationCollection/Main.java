@@ -1,8 +1,6 @@
 package org.example.transformationCollection;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -25,6 +23,15 @@ public class Main {
         for (int i = 0; i < newColors.length; i++) {
             newColors[i] = colorsList.get(i);
         }
-        System.out.println(Arrays.toString(newColors));
+        System.out.println(Arrays.toString(newColors).concat("\n"));
+
+
+        HashSet<String> colorsHashSet = new HashSet<>(Arrays.asList(newColors));
+        System.out.println(colorsHashSet.toString().concat("\n"));
+
+
+        TreeSet<String> colorsTreeSet = new TreeSet<>(new ColorComparator());
+        colorsTreeSet.addAll(Arrays.asList(colors));
+        System.out.println(colorsTreeSet);
     }
 }
