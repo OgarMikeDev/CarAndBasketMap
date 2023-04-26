@@ -12,6 +12,7 @@ public class Main {
         colors.add("Yellow");
 
 
+        //Error!
 //        for (String color : colors) {
 //            System.out.println(color);
 //            if (color.equals("Green")) {
@@ -21,9 +22,10 @@ public class Main {
 
 
         Iterator<String> iterator = colors.iterator();
+        //Enumeration collection
+//        iterator.forEachRemaining(element -> System.out.println(element));
         while (iterator.hasNext()) {
             String color = iterator.next();
-//            System.out.println(color);
             if (color.equals("Green")) {
                 iterator.remove();
             }
