@@ -12,9 +12,9 @@ public class Map {
 
 
         TreeMap<String, Integer> basketTreeMap = new TreeMap<>(new ProductComparator());
-        basketTreeMap.putAll(basketHashMap);
         for (java.util.Map.Entry entry : basketHashMap.entrySet()) {
             System.out.println(entry.getKey() + " - " + entry.getValue());
         }
+        basketTreeMap.putAll(basketHashMap);
     }
 }
