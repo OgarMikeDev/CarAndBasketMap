@@ -1,7 +1,4 @@
-package Collection;
-
-import java.util.ArrayList;
-import java.util.Collection;
+package org.example.Collection;
 
 public class Main {
     public static void main(String[] args) {
