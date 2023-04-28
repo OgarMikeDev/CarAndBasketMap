@@ -15,25 +15,41 @@ public class Game {
     }
 
     public void initPlayers() {
-        players.add("Alex Ogar");
-        players.add("Marina Ogar");
-        players.add("Anna Ogar");
-        players.add("Misha Ogar");
-        players.add("Lesha Ogar");
-        players.add("Robert Nabaldyan");
-        players.add("Vika Nabaldyan");
+        players.add("Daria Ogar");
+        players.add("Bogdan Budoshin");
+        players.add("Fedor Ogar");
+        players.add("Kiril Nabaldyan");
+        players.add("Leon Nabaldyan");
         players.add("Gamlet Gyardjyan");
         players.add("Aik Gyardjyan");
+        Collections.sort(players);
     }
 
-    public void getWinners() {
+    public ArrayList<String> getListPlayers() {
+        Collections.sort(players);
+        return players;
+    }
+
+    public ArrayList<String> getWinners() {
         Collections.shuffle(players);
         ArrayList<String> listWinners = new ArrayList<>();
         for (int i = 0; i < WIN_COUNT; i++) {
             listWinners.add(players.get(i));
         }
-        for (String winner : listWinners) {
-            System.out.println("Winner: ".concat(winner));
+        return listWinners;
+    }
+
+    public boolean add(String player) {
+        int index = Collections.binarySearch(players, player);
+        if (index >= 0) {
+            return false;
         }
+        players.add(-index - 1, player);
+        return true;
+    }
+
+    @Override
+    public String toString() {
+        return "Full list players: ".concat(String.valueOf(players));
     }
 }
