@@ -11,7 +11,7 @@ public class Cappuccino {
 
     public void prepare() {
         System.out.println("Cooking coffee!");
-        System.out.println("Add sugar: " + sugar);
-        System.out.println("Add cinnamon: " + cinnamon);
+        System.out.println("Add sugar: " + sugar.isExist());
+        System.out.println("Add cinnamon: " + cinnamon.isExist());
     }
 }

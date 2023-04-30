@@ -11,7 +11,7 @@ public enum Sugar {
         exist = contains;
     }
 
-    public boolean getSugarExist() {
+    public boolean isExist() {
         return exist;
     }
 }
