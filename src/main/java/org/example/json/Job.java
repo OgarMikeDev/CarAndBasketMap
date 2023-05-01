@@ -1,13 +1,17 @@
 package org.example.json;
 
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.math.BigDecimal;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
-@Data
+@Setter
+@Getter
 public class Job {
-    private LocalDateTime since;
+    private LocalDate since;
     private String city;
 
     private BigDecimal salary;
