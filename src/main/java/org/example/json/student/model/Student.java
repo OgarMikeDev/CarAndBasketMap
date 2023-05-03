@@ -22,7 +22,7 @@ public class Student {
     private int age;
 
 
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "courses_id")
     private List<Course> courses;
 }
