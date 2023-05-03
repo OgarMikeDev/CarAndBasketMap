@@ -13,5 +13,5 @@ public class Request {
 
     private int age;
 
-    private String courses;
+    private List<Course> courses;
 }

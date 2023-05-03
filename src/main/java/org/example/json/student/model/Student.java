@@ -22,7 +22,7 @@ public class Student {
     private int age;
 
 
-//    @ManyToOne
-//    @JoinColumn(name = "courses_id")
-    private String courses;
+    @OneToMany
+    @JoinColumn(name = "courses_id")
+    private List<Course> courses;
 }
