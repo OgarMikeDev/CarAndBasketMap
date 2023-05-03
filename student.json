@@ -1,0 +1,6 @@
+{
+  "firstName": "Иван",
+  "lastName": "Петров",
+  "age": 25,
+  "courses": [{"name": "Программирование", "duration": 4}, {"name": "Система контроля версий Git", "duration": 2}]
+}

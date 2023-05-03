@@ -18,10 +18,7 @@ public class Main {
         objectMapper.registerModule(new JavaTimeModule());
 
         Person person = objectMapper.readValue(json, Person.class);
-
-
         person.setName("Alex");
-
 
 
         String newJson = objectMapper.writeValueAsString(person);
