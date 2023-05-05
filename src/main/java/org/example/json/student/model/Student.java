@@ -23,6 +23,6 @@ public class Student {
 
 
     @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name = "courses_id")
+    @JoinColumn(name = "student_id")
     private List<Course> courses;
 }
