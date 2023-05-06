@@ -16,7 +16,7 @@ public class Controller {
     private final RepositoryStudents repositoryStudents;
 
 
-    @RequestMapping(value = "/", method = RequestMethod.POST)
+    @PostMapping("/")
     public Response addStudent(@RequestBody Request request) {
         Student student = new Student();
         student.setFirstName(request.getFirstName());
@@ -31,13 +31,13 @@ public class Controller {
         return new Response(false);
     }
 
-    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
+    @GetMapping("/{id}")
     public Student getStudent(@PathVariable String id) {
         Student student = repositoryStudents.getStudentById(id);
         return student;
     }
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
+    @GetMapping("/")
     public List<Student> getStudent() {
         List<Student> students = repositoryStudents.findAll();
         return students;
