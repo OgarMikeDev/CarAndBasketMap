@@ -8,12 +8,9 @@
 
 .out-student {
   block-size: 100px;
-  text-align: center;
-}
-
-.out-database {
-  block-size: 100px;
-  background: #ffcccc;
   display: flex;
+  align-content: center;
+  text-align: center;
+  background: #ffcccc;
   justify-content: center;
 }
