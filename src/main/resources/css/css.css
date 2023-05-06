@@ -1,11 +1,19 @@
 .text-about-area-personal {
-  background: #ffcccc;;
+  block-size: 100px;
+  background: #ffcccc;
   text-align: center;
   display: flex;
   justify-content: center;
-  float:
 }
 
 .out-student {
+  block-size: 100px;
   text-align: center;
+}
+
+.out-database {
+  block-size: 100px;
+  background: #ffcccc;
+  display: flex;
+  justify-content: center;
 }

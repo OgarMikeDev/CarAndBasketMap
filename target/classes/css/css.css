@@ -1,5 +1,19 @@
-.button-ADD {
-  width: 400px;
-  background: red;
-  align-items: right;
+.text-about-area-personal {
+  block-size: 100px;
+  background: #ffcccc;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.out-student {
+  block-size: 100px;
+  text-align: center;
+}
+
+.out-database {
+  block-size: 100px;
+  background: #ffcccc;
+  display: flex;
+  justify-content: center;
 }

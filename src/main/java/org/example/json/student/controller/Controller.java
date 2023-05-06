@@ -8,6 +8,8 @@ import org.example.json.student.request.Request;
 import org.example.json.student.response.Response;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @org.springframework.stereotype.Controller
 @RequiredArgsConstructor
 @RestController
@@ -34,6 +36,12 @@ public class Controller {
     public Student getStudent(@PathVariable String id) {
         Student student = repositoryStudents.getStudentById(id);
         return student;
+    }
+
+    @GetMapping("/")
+    public List<Student> getStudent() {
+        List<Student> students = repositoryStudents.findAll();
+        return students;
     }
 
     @PutMapping("/put/{id}")
